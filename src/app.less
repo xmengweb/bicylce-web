@@ -1,0 +1,15 @@
+page {
+  --global-color: #5cd696;
+  box-sizing: border-box;
+
+  .nut-navbar-placeholder {
+    --nutui-navbar-height: 100px;
+    height: calc(var(--nutui-navbar-height) + env(safe-area-inset-top) - 6px);
+    margin-bottom: 0;
+
+    .nut-navbar {
+      box-sizing: content-box;
+      margin-bottom: 0;
+    }
+  }
+}

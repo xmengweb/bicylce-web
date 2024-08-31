@@ -1,0 +1,63 @@
+.recordCard {
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  .title {
+    display: flex;
+    align-items: center;
+    .title-text {
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+  .twoPoints {
+    font-size: small;
+    margin: 20px 0;
+    margin-left: 10px;
+    .begin {
+      margin-bottom: 25px;
+    }
+    .begin,
+    .end {
+      display: flex;
+      align-items: center;
+    }
+    .beginPoint,
+    .endPoint {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fb0707;
+      margin-right: 20px;
+    }
+    .beginPoint {
+      background-color: #6eef18;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 100%; /* 相对于父容器底部 */
+        left: 50%; /* 相对于父容器左侧 */
+        width: 0; /* 线条宽度 */
+        height: 55px; /* 线条高度 */
+        border-left: 1px solid #6eef18;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .bottom-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 27px;
+      color: #898989;
+      .text-number {
+        font-size: large;
+        color: black;
+        font-weight: 600;
+      }
+    }
+  }
+}

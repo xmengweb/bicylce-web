@@ -2,11 +2,11 @@
   "miniprogramRoot": "dist/",
   "projectname": "myApp",
   "description": "study project",
-  "appid": "touristappid",
+  "appid": "",
   "setting": {
     "urlCheck": true,
-    "es6": false,
-    "enhance": false,
+    "es6": true,
+    "enhance": true,
     "compileHotReLoad": false,
     "postcss": false,
     "minified": false,
@@ -16,7 +16,8 @@
       "outputPath": ""
     },
     "minifyWXSS": false,
-    "minifyWXML": false
+    "minifyWXML": false,
+    "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
   "libVersion": "3.1.5",

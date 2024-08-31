@@ -1,0 +1,112 @@
+.bicycling {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-color: black;
+
+  .sudu {
+    font-size: 200px;
+    font-weight: bolder;
+    margin-top: 220px;
+  }
+  .sududw {
+    font-size: xx-small;
+  }
+  .time {
+    font-size: large;
+    font-weight: 800;
+    margin-top: 50px;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background-color: #0e0e0e;
+  }
+  .suduinfo {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .suduinfo-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .suduinfo-child-data {
+        font-size: 50px;
+      }
+
+      .suduinfo-child-name {
+        color: #949494;
+      }
+
+      .suduinfo-child-dw {
+        font-size: xx-small;
+        font-weight: 300;
+        color: #808080;
+      }
+    }
+  }
+  .set {
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    .begin{
+      .nut-circleprogress-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+      }
+    }
+  }
+  .toast{
+    background-color: #202026;
+    width: 35%;
+    height: 100px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+  }
+}
+
+.map-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  .map-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    border-radius: 26px;
+    overflow: hidden;
+    transform: translateY(0); /* 当抽屉打开时，我们不移动抽屉 */
+  }
+}

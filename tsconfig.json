@@ -17,12 +17,11 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "baseUrl": "./"
   },
   "include": ["./src", "./types", "./config"],
   "compileOnSave": false

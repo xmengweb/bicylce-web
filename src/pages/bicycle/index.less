@@ -1,0 +1,161 @@
+.bicycle {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 30px;
+  padding-bottom: 0;
+  background-color: #f6f6f6;
+
+  .bigText {
+    color: #5cd696;
+    font-size: 75px;
+    font-weight: 600;
+  }
+  .weightText {
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+  }
+  .history {
+    position: relative;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .history-title {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .data {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        padding: 30px 10px;
+        background-color: white;
+        border-radius: 20px;
+      }
+
+      .right {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+        .title{
+          font-weight: 600;
+        }
+        .set{
+          position: absolute;
+          color: #1fdd7b;
+          font-size: 26px;
+          top: 15px;
+          right: 15px;
+        }
+        .nut-circleprogress{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .run {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 180px;
+    height: 180px;
+    background-color: #5cd696;
+    border-radius: 50%;
+    color: white;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      /* 外阴影 */ 0 4px 20px rgba(0, 0, 0, 0.1); /* 更大范围的外阴影 */
+
+    .dongicon {
+      position: absolute;
+      bottom: -80px;
+    }
+  }
+
+  .shanxing {
+    width: 140rpx;
+    height: 140rpx;
+    margin: 10rpx auto;
+    position: relative;
+    border-radius: 70rpx;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sx1,
+  .sx2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140rpx;
+    height: 140rpx;
+    clip: rect(0rpx, 70rpx, 140rpx, 0rpx);
+  }
+
+  .sx1 {
+    z-index: 1;
+  }
+
+  .sx2 {
+    z-index: 2;
+  }
+
+  .sx_t {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    z-index: 3;
+    background: #fff;
+  }
+
+  .shanxing1 {
+    background: #4886ff;
+  }
+
+  .shanxing1 .sx1,
+  .shanxing1 .sx2 {
+    background: #ccc;
+  }
+
+  .shanxing2 {
+    background: #ccc;
+  }
+
+  .shanxing2 .sx1,
+  .shanxing2 .sx2 {
+    background: #4886ff;
+    transform: rotate(180deg);
+  }
+}

@@ -12,6 +12,10 @@ declare module '*.sass';
 declare module '*.styl';
 
 declare namespace NodeJS {
+
+  "globals": {
+    "definePageConfig": "readonly"
+  }
   interface ProcessEnv {
     /** NODE 内置环境变量, 会影响到最终构建生成产物 */
     NODE_ENV: 'development' | 'production',
